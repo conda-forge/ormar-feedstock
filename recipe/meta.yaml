@@ -1,5 +1,5 @@
 {% set name = "ormar" %}
-{% set version = "0.10.23" %}
+{% set version = "0.10.24" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ormar-{{ version }}.tar.gz
-  sha256: bd8f86389db87f3844b25d7e1e47e18fa52b113877dcbad180f67d5a9597c9d3
+  sha256: 908eba2cb7350c5ef0c8e7d9653d061f357e2c7706b78298bd446e0848000762
 
 build:
   number: 0
