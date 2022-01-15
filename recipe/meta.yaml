@@ -33,6 +33,17 @@ requirements:
 test:
   imports:
     - ormar
+    - ormar.decorators
+    - ormar.fields
+    - ormar.models
+    - ormar.models.descriptors
+    - ormar.models.helpers
+    - ormar.models.mixins
+    - ormar.protocols
+    - ormar.queryset
+    - ormar.queryset.actions
+    - ormar.relations
+    - ormar.signals
   commands:
     - pip check
   requires:
