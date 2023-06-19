@@ -1,11 +1,11 @@
-About ormar
-===========
+About ormar-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ormar-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/collerek/ormar
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ormar-feedstock/blob/main/LICENSE.txt)
 
 Summary: A simple async ORM with fastapi in mind and pydantic validation.
 
