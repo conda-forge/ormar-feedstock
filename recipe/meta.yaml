@@ -1,5 +1,5 @@
 {% set name = "ormar" %}
-{% set version = "0.20.1" %}
+{% set version = "0.20.2" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ormar-{{ version }}.tar.gz
-  sha256: 0125807d0bf209e2b3b51f6f4030948f4368757486e73d944b157b38f55cf986
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ormar-{{ version }}.tar.gz
+  sha256: 263bf00f63cbe824882fbbb828764aa0539204ae6d259e9e1b51c2d2a6a1c83e
 
 build:
   number: 0
@@ -20,12 +20,13 @@ requirements:
   host:
     - pip
     - poetry-core >=1.0.0
-    - python >=3.8.0,<4.0.0
+    - python {{ python_min }}
   run:
-    - python >=3.8.0,<4.0.0
+    - python >={{ python_min }}
     - databases >=0.7.0,<0.8.0
-    - pydantic ==2.5.3
+    - pydantic >=2.5.3,<2.9.0
     - sqlalchemy >=1.4.42,<2.0.0
+    - setuptools >=75.1.0,<76.0.0
 
 test:
   imports:
@@ -34,6 +35,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/collerek/ormar
