@@ -12,12 +12,11 @@ Summary: A simple async ORM with fastapi in mind and pydantic validation.
 Documentation: https://collerek.github.io/ormar/
 
 The ormar package is an async mini ORM for Python, with support for
- Postgres, MySQL, and SQLite. The main benefit of using ormar includes the
- ability to get an async ORM that can be used with async frameworks
- (fastapi, starlette etc.). Using ormar would simplly workflow with just one
- model to maintain—you don't have to maintain pydantic and other orm model
- (sqlalchemy, peewee, gino etc.)
-
+Postgres, MySQL, and SQLite. The main benefit of using ormar includes the
+ability to get an async ORM that can be used with async frameworks
+(fastapi, starlette etc.). Using ormar would simplly workflow with just one
+model to maintain—you don't have to maintain pydantic and other orm model
+(sqlalchemy, peewee, gino etc.)
 
 Current build status
 ====================
