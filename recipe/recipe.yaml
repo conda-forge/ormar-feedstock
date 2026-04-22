@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: ormar
-  version: "0.23.1"
+  version: "0.24.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/ormar-${{ version }}.tar.gz
-  sha256: 4f88462fce072b2a184cb4010f6d9eaa7760a7f3725520acfc23597787b77111
+  sha256: 76016e5aea4190bdfa0423adb8ea42ab281e98c204f66336a4d61ddcbe88c688
 
 build:
   number: 0
