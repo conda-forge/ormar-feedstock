@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: ormar
-  version: "0.29.0"
+  version: "0.30.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/ormar-${{ version }}.tar.gz
-  sha256: 29510e9bdfb5909eca944c7fdecddf4654d659cc38a25b5373a6db63c78c81c6
+  sha256: 965dba2584849f8ab1a0948f9d6ebf50c859e0b162a091ec9111fa2da74cc939
 
 build:
   number: 0
@@ -21,12 +21,12 @@ build:
 requirements:
   host:
     - pip
-    - poetry-core >=1.0.0
+    - poetry-core
     - python ${{ python_min }}.*
   run:
     - python >=${{ python_min }}
     - pydantic >=2.11.9,<2.15
-    - sqlalchemy >=2.0.40,<2.1
+    - sqlalchemy >=2.0.50,<2.2
     - ormar-utils >=0.2.0
     - orjson >=3.6.4
     # from sqlalchemy[ayncio]
